@@ -1,0 +1,265 @@
+body{
+	background:#eee;
+}
+
+#wrp{
+	width:948px;
+	float:left;
+	display:block;
+}
+
+.icon{
+	width:234px;
+	margin-top:36px;
+	margin-right:18px;
+	border-radius:40px;
+	-webkit-box-shadow:0px 1px 5px 1px black;
+	float:left;
+	clear:none;
+	-webkit-transition:.2s all linear;
+	margin-bottom:18px;
+}
+
+.icon:hover{
+	-webkit-transform:scale(2.188034188);
+	z-index:2;
+	position:relative;
+}
+
+.icon.last{
+	margin-right:0px;
+}
+
+#wrp-wrp-sb{
+	float:left;
+	display:inline-block;
+	width:192px;
+}
+
+#wrp-sb{
+	float:left;
+	margin-left:9px;
+	padding-top:54px;
+	padding-right:7px;
+	border-right:4px solid black;
+	margin-right:7px;
+	position:fixed;
+	top:0px;
+	left:0px;
+        width:165px;
+	
+}
+
+#ole{
+	background:url('../img/ole-bg.jpg') -8px 0px;
+}
+
+#joachim{
+	background:url('../img/joachim-bg.jpg') 8px 0px;
+}
+
+.right{
+	float:right;
+}
+
+p + p{
+	text-indent:0px;
+	margin-top:18px;
+}
+
+h3{
+	line-height:36px;
+}
+
+.first-small{
+	margin-left:9px !important;
+}
+
+.black-box{
+	color:white;background:black;margin-left:18px;padding: 0px 0px 0px 18px;
+	margin-bottom:18px;
+	float:right;
+	margin-right:9px;
+	width:468px; 
+	-webkit-transform:scale(1);
+}
+
+.black-box .width1{
+	width:225px;
+}
+
+.margin{
+	float:left;
+	padding:0px 9px 0px 9px;
+}
+
+.single-line{
+	padding-bottom:18px !important;
+	float:left;
+}
+
+.double-lines{
+	padding-bottom:36px !important;
+	float:left;
+}
+
+#wrp-cnt{
+	width:756px;
+	clear:none;
+	float:right;
+	display:block;
+	margin-bottom:400px;	
+	
+	
+}
+
+
+
+#sb ul{
+	margin:0px;
+	padding:0px;
+	position:static;
+	float:right;
+	
+	
+	
+}
+
+#sb ul li{
+	list-style:none;
+}
+
+#sb ul li a{
+	margin-bottom:18px;
+	padding:9px;
+	font-size:20px;
+	font-weight:bold;
+	float:right;
+	clear:both;
+	text-align:right;
+	color:white;
+	background:black;
+	list-style:none;
+	text-transform:uppercase;
+	text-decoration:none;
+	position:static;
+}
+#footer{
+	float:right;
+	margin-bottom:9px;
+}
+
+#sb ul li a.last{
+	margin-bottom:0px;
+}
+
+#sb ul li a:hover, #sb ul li.active a{
+	color:black;
+	background:white;
+	border:3px solid black;
+	padding:6px;
+}
+
+.small{
+	font-size:9px;
+	margin-top:1px;
+	margin-bottom:-1px;
+	text-align:right;
+	line-height:18px;
+}
+
+img{
+	position:static;
+	display:block;
+	margin:0px;
+	padding:0px;
+}
+.cnt{
+	display:inline-block;
+	float:left;
+	width:756px;
+	padding-bottom:18px;
+	margin-bottom:0px;
+	border-bottom:18px solid black;
+	float:left;
+
+}
+
+#bar{
+	background-color:red;
+	color:white;
+	padding:9px;
+	position:relative;
+	z-index:2;
+	cursor:pointer;
+}
+
+#bar *{
+	margin:0px;
+	padding:0px;
+	position:static;
+	text-align:center;
+}
+
+
+a{
+	color:black;
+}
+
+.black-box a{
+	color:white;
+}
+
+.small a{
+	color:black;
+}
+
+h1.line{
+	font-weight:bold;
+	font-size:162px;
+	border-bottom:36px solid black;
+	line-height:104px;
+	height:108px;
+	position:static;
+}
+
+
+.chrome #sb li a{
+	line-height:18px;
+	height:18px;
+
+}
+
+.chrome #sb li.active a, .chrome #sb li a:hover{
+
+}
+
+.gecko h1.line{
+	position:relative;
+	top:14px;
+	height:94px;
+	margin-bottom:32px;
+
+}
+
+.opera h1.line{
+	line-height:88px;
+	padding-top:20px;
+}
+
+.opera 	#sb li a{
+	line-height:18px;
+	padding-top:11px;
+	padding-bottom:7px;
+}
+
+.opera 	#sb li a:hover, .opera 	#sb li.active a{
+	line-height:18px;
+	padding-top:8px;
+	padding-bottom:4px;
+}
+
+.left{
+	text-align:left !important;
+}
+

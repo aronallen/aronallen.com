@@ -1,0 +1,17 @@
+/*IE Hacks*/
+
+h1.line{
+	line-height: 108px;
+}
+
+.container .back{
+	display:none;
+}
+
+.container:hover .back{
+	display:block !important;
+}
+
+.container:hover .front{
+	display:none !important;
+}
