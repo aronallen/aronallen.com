@@ -1,0 +1,21 @@
+CACHE MANIFEST  
+#v12123124124
+
+index.html
+icon.png
+collection/bb.books.js
+collection/bb.chapters.js
+data/data.js
+model/bb.book.js
+model/bb.chapter.js
+router/bb.router.js
+style.css
+vendor/$.min.js
+vendor/$.x.js
+vendor/_.min.js
+vendor/bb.min.js
+view/bb.toc.js
+view/bb.view.js
+
+NETWORK:
+*

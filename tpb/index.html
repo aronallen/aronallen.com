@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="da-DK" manifest="manifest.cache">
+<head>
+	<meta charset="UTF-8">
+	<title>TPB</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="apple-touch-icon" href="icon.png"/>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27410840-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+	
+	<script src="data/data.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<script src="vendor/_.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/$.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/$.x.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="vendor/bb.min.js" type="text/javascript" charset="utf-8"></script>
+	  
+
+  <script src="model/bb.chapter.js" type="text/javascript" charset="utf-8"></script>
+  <script src="collection/bb.chapters.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="model/bb.book.js" type="text/javascript" charset="utf-8"></script>
+  <script src="collection/bb.books.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="router/bb.router.js" type="text/javascript" charset="utf-8"></script>
+  
+
+	<script src="view/bb.toc.js" type="text/javascript" charset="utf-8"></script>
+  <script src="view/bb.view.js" type="text/javascript" charset="utf-8"></script>
+ 	
+	
+	
+	
+	<script type="text/javascript">	
+	
+	var BOOK_VIEW;
+	var BIBLE_VIEW;
+	var CHAPTER_VIEW; 
+	var timeout; 
+	
+	
+	
+	$(document).ready(function(){
+		                                   
+
+		
+		var gt = new BOOKS(NT.books.concat(GT.books).concat(AP.books)); 
+		
+		BIBLE_VIEW = new TOC({collection : gt});
+		BOOK_VIEW = new TOC();
+		CHAPTER_VIEW = new VIEW();
+		
+		BIBLE_VIEW.render();   
+				 
+		$("body").append(BIBLE_VIEW.el); 
+		$("body").append(BOOK_VIEW.el);
+		$("body").append(CHAPTER_VIEW.el);
+		
+		
+		var BB_ROUTER = new ROUTER();		
+		Backbone.history.start({pushState: false}); 
+		
+
+		$(".cell", BIBLE_VIEW.el).live("click", function(){
+			$(".active", BIBLE_VIEW.el).removeClass('active');
+
+			$(this).addClass('active');
+			var n = $(this).attr('data-nick'); 
+			window.location.hash = '/book/' + n;
+		});
+		
+		$(".cell", BOOK_VIEW.el).live("click", function(){
+
+			$(".active", BOOK_VIEW.el).removeClass('active');
+			$(this).addClass('active');
+			var c = $(this).attr('data-chapter'); 
+			var n = $(this).attr('data-nick'); 
+			
+			window.location.hash = '/book/' + n + '/' + c;
+		});
+		
+		$("#header a").live('click', function(e){
+			var s = $(this); 
+			setTimeout(function(){
+				s.text('The Pirate Bible');
+				s.attr('href', '#');	
+			}, 10);
+			
+			window.location.hash = s.attr('href').replace('#', '');
+			e.preventDefault();
+
+		})
+	 
+	
+	});  
+	
+	</script>
+	
+</head>
+
+
+<body>
+	<div id="header"><a href="#">The Pirate Bible</a></div>
+</body>
+</html>
