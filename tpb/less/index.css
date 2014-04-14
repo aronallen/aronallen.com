@@ -151,6 +151,15 @@ header chapter {
   border-bottom: 1px solid #eee;
   font-family: 'HelveticaNeue', 'Helvetica', sans-serif;
 }
+.chapter.top {
+  float: left;
+  border-top: 1px solid #eee;
+}
+.chapter.right {
+  float: right;
+  border-left: 1px solid #eee;
+  border-right: none;
+}
 .book {
   font-family: 'HelveticaNeue', 'Helvetica', sans-serif;
   cursor: pointer;

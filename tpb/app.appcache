@@ -2,9 +2,21 @@ CACHE MANIFEST
 
 
 CACHE:
+favicon.ico
+index.html
+js/index.js
+less/index.css
+img/icon.png
+img/splash-1536x2008.png
+img/splash-2048x1496.png
+img/splash-320x460.png
+img/splash-640x1096.png
+img/splash-640x920.png
+img/splash-748x1024.png
+img/splash-768x1004.png
 
 
 NETWORK:
 *
 
-# hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+# hash: d8f389fb7bb713a0b1b96fee7fb9e8bdfb95d862c5fcd4237ab646e525ed7d54
