@@ -29,6 +29,8 @@ html {
 content {
   padding-top: 80px;
   display: block;
+  float: left;
+  width: 100%;
 }
 h2 {
   line-height: 20px;
@@ -71,6 +73,10 @@ header {
   color: white;
   position: fixed;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   line-height: 60px;
   padding-top: 20px;
   box-shadow: 0 -1px 0px 2px rgba(0, 0, 0, 0.25);
@@ -155,15 +161,17 @@ content .toggle {
   width: 100%;
   float: left;
 }
-content .toggle .chapter:first-child {
-  float: left;
-  border-top: 1px solid #eee;
-}
 content .toggle .chapter:last-child {
   float: right;
+  border: none;
   border-left: 1px solid #eee;
   border-top: 1px solid #eee;
-  border-right: none;
+}
+content .toggle .chapter:first-child {
+  float: left;
+  border: none;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
 content .book {
   font-family: 'HelveticaNeue', 'Helvetica', sans-serif;

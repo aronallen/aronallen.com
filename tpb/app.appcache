@@ -4,8 +4,8 @@ CACHE MANIFEST
 CACHE:
 index.html
 favicon.ico
-js/index.js
 less/index.css
+js/index.js
 img/icon.png
 img/splash-1536x2008.png
 img/splash-2048x1496.png
@@ -19,4 +19,4 @@ img/splash-768x1004.png
 NETWORK:
 *
 
-# hash: e5259393c11a55a7dac33807ba24aded36db8aa8a3d46ccb280b49d740a6a4ae
+# hash: 901274cf62af22eff47d7ec4a0a49138c59a10b05121544e87c496c2f3c3c6fb
