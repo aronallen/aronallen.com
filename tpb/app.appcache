@@ -5,6 +5,7 @@ CACHE:
 index.html
 favicon.ico
 js/index.js
+less/index.css
 img/icon.png
 img/splash-1536x2008.png
 img/splash-2048x1496.png
@@ -13,10 +14,9 @@ img/splash-640x1096.png
 img/splash-640x920.png
 img/splash-748x1024.png
 img/splash-768x1004.png
-less/index.css
 
 
 NETWORK:
 *
 
-# hash: 229945aa7c1d45dfe1bc2ce9476459d596d5d98b334fc6c10bc5dc919501d63f
+# hash: e5259393c11a55a7dac33807ba24aded36db8aa8a3d46ccb280b49d740a6a4ae
